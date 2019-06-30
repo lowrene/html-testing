@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+body{
+  text-align: center;
+    }
+
+
+.font{
+  text-shadow: 0px 0px 3px #6699ff;
+  font-family:Palatino Linotype;
+  font-style:oblique;
+  font-size: 25px;
+  padding-bottom: 20px;
+      }
+
+.mySlides {
+  display:none;
+      }
+
+.slide-section{
+  margin-left: auto;
+  margin-right: auto;
+      }
+
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  float:left;
+}
+
+.container a{
+  color: white;
+  text-decoration: none;
+}
+
+.container img {
+  vertical-align: middle;
+  background-color:white;
+
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 35%;
+  padding: 10px;
+  float:left;
+}
+</style>
+<link rel="stylesheet" href="common.css">
+<meta charset="utf-8">
+<title>All</title>
+
+
+</head>
+
+<body>
+<h1>Flowery Heaven</h1><hr><div class="border">
+<div class="cart">
+  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/shopping-trolley_1f6d2.png" width=50px>
+</div>
+<ul class="nav">
+  <li><a href="#" class="current">ALL</a></li>
+  <li><a href="colours.html">COLOURS</a></li>
+  <li><a href="membership.html">MEMBERSHIP</a></li>
+</ul>
+<div class="slide-section" style="max-width:500px">
+  <img class="mySlides" src="images/mini3.PNG" style="width:100%">
+  <img class="mySlides" src="images/white.PNG" style="width:100%">
+  <img class="mySlides" src="images/continue.PNG" style="width:100%">
+  <img class="mySlides" src="images/continue1.PNG" style="width:100%">
+  <img class="mySlides" src="images/continue2.PNG" style="width:100%">
+  <img class="mySlides" src="images/continue3.PNG" style="width:100%">
+  <img class="mySlides" src="images/continue4.PNG" style="width:100%">
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script><br>
+<div class="container">
+  <a href="basket.html">
+  <img src="images/Capture.PNG"style="width:35%;">
+  <div class="content">
+    <h2>Basket Collection</h2></a>
+
+</div>
+
+
+
+  </body>
+</html>

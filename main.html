@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+  <head>
+    <style>
+      body{
+        text-align: center;
+      }
+
+
+      .font{
+        text-shadow: 0px 0px 3px #6699ff;
+        font-family:Palatino Linotype;
+        font-style:oblique;
+        font-size: 25px;
+        padding-bottom: 20px;
+      }
+
+      .basket-collection{
+        background-image:url("images/capture.PNG");
+        background-repeat: no-repeat;
+        padding: 15px 50px 30px 5px;
+      }
+
+
+        .basket-collection a{
+          color:white;
+          font-size: 20px;
+          font-family: serif;
+          font-weight:bold;
+        }
+
+
+        #imageDiv img {
+        	width:100px;
+        	height:100px;
+        	border:1px solid white;
+        	margin:9px;
+        }
+
+        #imageDiv {
+        	width:850px;
+        	height:120px;
+        	background-color:#ddccff;
+        	margin:auto;
+        }
+
+        #imageDiv li {
+        	display:inline-block;
+        	width:104px;
+        	height:120px;
+        	float:left;
+        	margin:2px;
+        }
+
+        #imageDiv img:hover {
+        	border:5px solid white;
+        	-webkit-transform:rotate(5deg);
+        }
+
+        #selectedImage {
+          padding-top: 50px;
+        	width:400px;
+        	height:400px;
+        	display:block;
+        	margin:auto;
+        }
+
+
+        .container {
+          position: relative;
+          max-width: 800px;
+          margin: 0 auto;
+          float:left;
+        }
+
+        .container a{
+          color: white;
+          text-decoration: none;
+        }
+
+        .container img {
+          vertical-align: middle;
+          background-color:white;
+
+        }
+
+        .container .content {
+          position: absolute;
+          bottom: 0;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+          color: #f1f1f1;
+          width: 35%;
+          padding: 10px;
+          float:left;
+      }
+
+    </style>
+    <link rel="stylesheet" href="common.css">
+    <meta charset="utf-8">
+    <title>All</title>
+
+    <script>
+    function showPicture(theImg) {
+    	document.getElementById("selectedImage").src = theImg.src;
+    }
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Flowery Heaven</h1><hr><div class="border">
+    <div class="cart">
+    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/shopping-trolley_1f6d2.png" width=50px>
+    </div>
+      <ul class="nav">
+        <li><a href="#" class="current">ALL</a></li>
+        <li><a href="casual.html">COLOURS</a></li>
+        <li><a href="membership.html">MEMBERSHIP</a></li>
+      </ul>
+    <img id="selectedImage" src="images/continue1.PNG"/>
+    <div id="imageDiv">
+    <ul>
+    <li><img src="images/mini3.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/white.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/continue.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/continue2.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/continue3.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/continue4.PNG" onclick="showPicture(this);"/></li>
+    <li><img src="images/continue1.PNG" onclick="showPicture(this);"/></li>
+
+    </ul>
+    </div>
+
+    <div class="container">
+      <a href="basket.html">
+      <img src="images/Capture.PNG"style="width:35%;">
+      <div class="content">
+        <h2>Basket Collection</h2></a>
+
+    </div>
+
+
+
+  </body>
+</html>
