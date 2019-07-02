@@ -29,10 +29,27 @@
         color: white;
         font-size: 16px;
         padding: 1px 24px;
-        border: none;
+        border-color: white;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 20px;
+      }
 
+      .container {
+        position: relative;
+        max-width: 800px; /* Maximum width */
+        margin: 0 auto; /* Center it */
+        padding-top: 100px;
+
+      }
+
+      .container .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 280px; /* Full width */
+        padding: 20px; /* Some padding */
       }
 
 
@@ -46,5 +63,29 @@
       <div class="title"><h1>Flowery Heaven</h1></div>
       <button class="shop">SHOP NOW</button>
     </div>
+      <div class="container">
+        <img src="images/Capture.PNG" style="width:40%;">
+        <div class="content">
+          <h2>BASKET COLLECTION</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/whitelily.PNG" style="width:40%;">
+        <div class="content">
+          <h2>SIMPLE BOUQUET</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/Capture2.PNG" style="width:40%;">
+        <div class="content">
+          <h2>GIFTS</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/rainbow.PNG" style="width:40%;">
+        <div class="content">
+          <h2>DIY</h2>
+        </div>
+      </div>
   </body>
 </html>
